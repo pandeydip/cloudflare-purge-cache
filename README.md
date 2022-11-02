@@ -5,9 +5,6 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/pandeydip/cloudflare-purge-cache/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/pandeydip/cloudflare-purge-cache/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/pandeydip/cloudflare-purge-cache.svg?style=flat-square)](https://packagist.org/packages/pandeydip/cloudflare-purge-cache)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-
 ## Installation
 
 You can install the package via composer:
