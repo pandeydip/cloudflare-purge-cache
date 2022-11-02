@@ -1,0 +1,58 @@
+{
+    "name": "pandeydip/cloudflare-purge-cache",
+    "description": "This package helps you purge cahce specifying a host/url",
+    "keywords": [
+        "pandeydip",
+        "laravel",
+        "cloudflare-purge-cache"
+    ],
+    "homepage": "https://github.com/pandeydip/cloudflare-purge-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Deepak Pandey",
+            "email": "er.pandeydip@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/contracts": "^9.0",
+        "spatie/laravel-package-tools": "^1.13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pandeydip\\CloudflarePurgeCache\\": "src"
+        }
+    },
+    "scripts": {
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pandeydip\\CloudflarePurgeCache\\CloudflarePurgeCacheServiceProvider"
+            ],
+            "aliases": {
+                "CloudflarePurgeCache": "Pandeydip\\CloudflarePurgeCache\\Facades\\CloudflarePurgeCache"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
