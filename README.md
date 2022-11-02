@@ -1,4 +1,4 @@
-# This package helps you purge cahce specifying a host/url
+# This package helps you purge cache specifying a host/url
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/pandeydip/cloudflare-purge-cache.svg?style=flat-square)](https://packagist.org/packages/pandeydip/cloudflare-purge-cache)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/pandeydip/cloudflare-purge-cache/run-tests?label=tests)](https://github.com/pandeydip/cloudflare-purge-cache/actions?query=workflow%3Arun-tests+branch%3Amain)
