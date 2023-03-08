@@ -23,7 +23,7 @@ php artisan vendor:publish --tag="cloudflare-purge-cache-config"
 This is the contents of the published config file:
 
 ```php
-eturn [
+return [
     'zone_id' => env('ZONE_ID', ''),
     'x_auth_email' => env('X_AUTH_EMAIL', ''),
     'x_auth_key' => env('X_AUTH_KEY', ''),
