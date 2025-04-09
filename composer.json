@@ -17,13 +17,13 @@
     ],
     "require": {
         "php": ">=8.1",
-        "guzzlehttp/guzzle": "^7.8.1",
-        "illuminate/contracts": "^11.10.0",
-        "spatie/laravel-package-tools": "^1.16.4"
+        "guzzlehttp/guzzle": "^7.9",
+        "illuminate/contracts": "^11.10.0|^12.0",
+        "spatie/laravel-package-tools": "^1.92.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^6.0"
+        "laravel/pint": "^1.22",
+        "nunomaduro/collision": "^8.8"
     },
     "autoload": {
         "psr-4": {
