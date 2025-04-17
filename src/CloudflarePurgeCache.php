@@ -8,7 +8,7 @@ class CloudflarePurgeCache
 {
     public static function purge(array $urls): bool
     {
-        $client = new Client();
+        $client = new Client;
 
         try {
             $response = $client->post(sprintf('https://api.cloudflare.com/client/v4/zones/%s/purge_cache',
@@ -29,6 +29,7 @@ class CloudflarePurgeCache
             }
         } catch (\Throwable $t) {
             Log::error('Cloudflare: '.$t->getMessage());
+
             return false;
         }
 
