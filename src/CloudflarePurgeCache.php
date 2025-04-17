@@ -28,6 +28,7 @@ class CloudflarePurgeCache
                 return true;
             }
         } catch (\Throwable $t) {
+            Log::error('Cloudflare: '.$t->getMessage());
             return false;
         }
 
