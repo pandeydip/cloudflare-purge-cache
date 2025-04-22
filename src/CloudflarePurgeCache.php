@@ -25,9 +25,11 @@ class CloudflarePurgeCache
                 ]);
 
             if ($response->getStatusCode() === 200) {
+                 \Log::info('Cloudflare: Cache Purged successfully.');
                 return true;
             }
         } catch (\Throwable $t) {
+             \Log::error('Cloudflare: '.$t->getMessage());
             return false;
         }
 
