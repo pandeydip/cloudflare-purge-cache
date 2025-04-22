@@ -8,7 +8,7 @@ class CloudflarePurgeCache
 {
     public static function purge(array $urls): bool
     {
-        $client = new Client();
+        $client = new Client;
 
         try {
             $response = $client->post(sprintf('https://api.cloudflare.com/client/v4/zones/%s/purge_cache',
@@ -25,11 +25,13 @@ class CloudflarePurgeCache
                 ]);
 
             if ($response->getStatusCode() === 200) {
-                 \Log::info('Cloudflare: Cache Purged successfully.');
+                \Log::info('Cloudflare: Cache Purged successfully.');
+
                 return true;
             }
         } catch (\Throwable $t) {
-             \Log::error('Cloudflare: '.$t->getMessage());
+            \Log::error('Cloudflare: '.$t->getMessage());
+
             return false;
         }
 
