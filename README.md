@@ -1,10 +1,13 @@
 # This package helps you purge cache specifying a host/url
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/pandeydip/cloudflare-purge-cache.svg?style=flat-square)](https://packagist.org/packages/pandeydip/cloudflare-purge-cache)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/pandeydip/cloudflare-purge-cache/run-tests?label=tests)](https://github.com/pandeydip/cloudflare-purge-cache/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/pandeydip/cloudflare-purge-cache/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/pandeydip/cloudflare-purge-cache/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/pandeydip/cloudflare-purge-cache.svg?style=flat-square)](https://packagist.org/packages/pandeydip/cloudflare-purge-cache)
 
+| Laravel | cloudflare-purge |
+|---------|------------------|
+| 9.0     | dev-main         |
+| 10.0    | dev-master       |
 ## Installation
 
 You can install the package via composer:
@@ -32,13 +35,12 @@ return [
 You can these details by logging into [cloudflare.com](https://dash.cloudflare.com/)
 
 ## Usage
-It returns boolean response `true` when success and `false` when purgin fails
+It returns boolean response `true` when success and `false` when purge fails
 
 ```php
 $response = CloudflarePurgeCache::purge(['https://abc.com', 'https://abc.com/test']);
 echo $response;
 ```
-
 
 ## Changelog
 
